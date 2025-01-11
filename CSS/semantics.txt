@@ -1,0 +1,15 @@
+Semantics elements:- 
+It will occupy entire width of the web page.
+Non Semantic elements:- 
+table, form
+
+
+margin:-
+
+top bottom left and right: 1
+
+top left and right then bottom:-3
+
+top and bottom then left and right:-2
+
+top right bottom left:-4
