@@ -1,0 +1,10 @@
+-> x , y , blur and spreadout (box)
+
+-> x , y , blur (text)
+
+
+float overrides the parent element.
+
+hence we need to use display:inline-block
+
+overflow: visible, hidden , auto

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradient</title>
+    <style>
+        .box{
+            height:300px;
+            width: 60%;
+            border: 2px solid rgb(181, 166, 166);
+            margin: 30px;
+        }
+
+        #box1{
+            /* background: linear-gradient(red,yellow,orange); */
+            /* background: linear-gradient(to top,red,yellow,orange); */
+            /* background: linear-gradient(to right,red,yellow,orange); */
+            /* background: linear-gradient(to left,red,yellow,orange); */
+            /* background: linear-gradient(to top left,red,yellow,orange); */
+            /* background: linear-gradient(to top right,red,yellow,orange); */
+            /* background: linear-gradient(to bottom right,red,yellow,orange); */
+            /* background: linear-gradient(to bottom left,red,yellow,orange);   */
+            background: linear-gradient(90deg,red,yellow,orange);
+  
+        }
+
+        #box2{
+            /* background: radial-gradient(red,yellow); */
+            /* background: radial-gradient(circle,red 25%,yellow 25%,plum 100%); */
+            /* background: radial-gradient(circle at top,red,yellow,plum); */
+            /* background: radial-gradient(circle at bottom,red,yellow,plum); */
+            /* background: radial-gradient(circle at right,red,yellow,plum); */
+            /* background: radial-gradient(circle at left,red,yellow,plum); */
+            /* background: radial-gradient(circle at 30% 30%,rgb(235, 29, 29),yellow,plum,red); */
+            /* background: radial-gradient(circle at 30% 30%,rgb(235, 29, 29),yellow,plum,red) */
+            /* background: radial-gradient(closest-side at 60%,rgb(235, 29, 29),yellow,plum,red) */
+            /* background: radial-gradient(farthest-side at 6%,rgb(235, 29, 29),yellow,plum,red) */
+            /* background: radial-gradient(closest-corner at 6%,rgb(235, 29, 29),yellow,plum,red) */
+            background: radial-gradient(farthest-corner at 60%,rgb(235, 29, 29),yellow,plum,red)
+        }
+
+        #box3{
+            width:300px;
+            border-radius:100%;
+            /* background: conic-gradient(red,yellow,red); */
+            /* background: conic-gradient(red 0deg,red 90deg,yellow 90deg ,yellow 180deg,orange 180deg,orange 270deg,blue 270deg,blue 360deg); */
+            /* background: conic-gradient(at 60% 70%, red 0deg,red 180deg,yellow 180deg ,yellow 360deg); */
+            /* background: conic-gradient(at 60% 70%, red 0deg,red 180deg,yellow 180deg ,yellow 360deg); */
+            background: repeating-conic-gradient(red     0deg,red 10deg,yellow 10deg ,yellow 30deg);
+            background-size: 50%;
+
+        }
+    </style>
+</head>
+<body>
+    <h1>Linear Gradient</h1>
+    <div class="box" id="box1"></div>
+
+    <h1>Radial Gradient</h1>
+    <div class="box" id="box2"></div>
+
+    <h1>Conic Gradient</h1>
+    <div class="box" id="box3"></div>
+</body>
+</html>
