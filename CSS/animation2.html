@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation2</title>
+    <style>
+        @keyframes animation2{
+            0%{background-color: plum; width: 500px;height: 500px;}
+            25%{background-color: plum; width: 500px;height: 500px; border-radius: 100%;}
+            /* 75%{border-radius: 100%; background-color: yellow;} */
+            /* 100%{background-color: plum; width: 500px;height: 500px;} */
+            75%{
+                border-radius: 75%;
+                background: repeating-conic-gradient(red 0deg,red 10deg,rgb(11,4,4) 10deg, rgb(24,4,4) 30deg);
+                transfrom: rotate(360deg);
+            }
+            100%{
+                border-radius: 75%;
+                background: repeating-conic-gradient(red 0deg,red 10deg,white 10deg, white 30deg);
+                transfrom: rotate(360deg);
+            }
+
+        }
+        .box{
+            width: 100px;
+            height: 100px;
+            background-color: black;
+            animation-name: animation2;
+            animation-duration: 5s;
+            animation-iteration-count: infinit;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+
+    </div>
+</body>
+</html>

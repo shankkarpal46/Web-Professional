@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation</title>
+    <style>
+        @keyframes animation1 {
+            from{background-color: red; border-radius: 0%;}
+            to{background: conic-gradient(red,yellow,red);border-radius: 100%;}
+            /* to{background-color: yellow; border-radius: 100%;} */
+                       
+        }
+        .box{
+            height: 100px;
+            width: 100px;
+            border: 2px solid black;
+            animation: animation1;
+            animation-duration: 5s;
+            animation-iteration-count: infinite;
+            animation-direction: reverse;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+</body>
+</html>
