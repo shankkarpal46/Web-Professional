@@ -1,0 +1,40 @@
+/* @meida print{} --> to adjust the content while it is printed.*/
+body{
+    background-color: aquamarine;
+}
+@media screen and (max-width:1400px){ 
+    body{
+        background-color: red;
+        .image{
+            width: 100px;;
+        }
+    }
+}
+
+@media screen and (max-width:1200px){ 
+    body{
+        background-color: greenyellow;
+        .image{
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:900px){ 
+    body{
+        background-color: blueviolet;
+        .image{
+            width: 100px;
+        }
+    }
+}
+
+@media screen and (max-width:700px){ 
+    body{
+        background-color: peru;
+        .image{
+            display: none;
+        }
+
+    }
+}

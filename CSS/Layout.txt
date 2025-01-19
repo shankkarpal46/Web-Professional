@@ -1,0 +1,18 @@
+fixed Layout: px 
+fluid Layout: % em rem ->
+Adaptive Layout: @media query
+
+root element:-
+
+html{
+
+font-size: 32px;
+} 
+
+
+main-axis
+cross-axis
+
+height-auto-> Adaptive 
+
+width: 100%; 
