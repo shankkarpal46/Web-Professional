@@ -41,3 +41,7 @@ console.log("We are learning Javascript".toLowerCase().split(" ").length)
 const words = "We are learning Javascript".split(" ")
 
 console.log(words.filter(word=>word.toLowerCase().startsWith("j")).length)
+
+console.log(words.filter(word=>word.toLowerCase().startsWith("j")).length)
+
+console.log(words.map(word=>word.padEnd(20,"*")))

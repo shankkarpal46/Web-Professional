@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="name">
+    <button id="button">Click</button>
+    <script>
+        document.getElementById("button").addEventListener("click",(event)=>{
+            console.log(event.target)
+        })
+
+        document.getElementById("name").addEventListener("change",(event)=>{
+            console.log(event.target.value)
+        })
+
+    </script>
+
+    <hr>
+
+    
+    <form id="productForm">
+        <label for="">Enter product name</label>
+        <input type="text" name="productName">
+
+        <br>
+
+        <label for="">Enter the product price</label>
+        <input type="text" name="price">
+
+        <input type="submit">
+
+        <script>
+            document.getElementById("productForm").addEventListener("submit",(event)=>{
+            event.preventDefault()
+            console.log(event.target.productName.value)
+            console.log(event.target.price.value)
+
+            event.target.productName.value="12"
+            event.target.price.value="224"
+        })
+        </script>
+    </form>
+</body>
+</html>

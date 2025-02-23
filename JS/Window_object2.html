@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window Objects</title>
+</head>
+<body>
+    <button onclick="display()">Click</button>
+    <button onclick="open_now()">Open Window</button>
+    <script>
+        console.error("Something went wrong")
+
+        console.log(window.history)
+        document.write(window.history.length)
+
+        function display()
+        {
+            window.history.go(-2)
+        }
+
+        function open_now(){
+            window.open()
+        }
+    </script>
+</body>
+</html>

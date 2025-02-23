@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+        .container.box.heading{
+            border:2px solid black;
+        }
+
+        .container{
+            width: 100%;
+            height: 300px;
+            background-color:palegoldenrod;
+        }
+
+        .box{
+            width: 70%;
+            height: 200px;
+            background-color:rgb(170, 238, 193);
+        }
+
+        .heading{
+            width: 40%;
+            height: 100px;
+            background-color:rgb(238, 170, 232);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="heading"></div>
+        </div>
+    </div>
+    <script>
+        document.querySelector(".container").addEventListener("click",()=>{alert("container")},true)
+        document.querySelector(".box").addEventListener("click",()=>{alert("box")},true)
+        document.querySelector(".heading").addEventListener("click",(e)=>{
+            e.stopPropagation()
+            alert("heading")
+        })
+
+
+        // event propagation -> contains event bubbbling and event capturing
+        // by default false-> thus event bubling will take place
+        // by default true-> thus event capturing will take place
+
+
+        window.addEventListener("online",()=>{
+            document.querySelector(".heading").innerText="You are online."
+        })
+
+        window.addEventListener("offline",()=>{
+            document.querySelector(".heading").innerText="You are offline."
+        })
+    </script>
+</body>
+</html>
