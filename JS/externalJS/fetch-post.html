@@ -1,0 +1,13 @@
+fetch("API",
+    method:"POST",
+    headers:{
+        "Content-Type":"application/json"
+    },
+
+    body:JSON.stringfy({
+        "productName":"Laptop",
+        "productDescripttion":"Best Laptop"
+    })
+}).then(response=>response.json()).then(data=>{
+    console.log(data)
+})

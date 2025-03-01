@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Details</title>
+</head>
+<body>
+    <script>
+        fetch('https://fakestoreapi.com/products').then(
+            response => response.json()).then(
+                data => {
+                    console.log(data)
+
+                    for(let product of data){
+                        console.log(product.title)
+                    }
+                })
+    </script>
+</body>
+</html>
